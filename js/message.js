@@ -3,6 +3,7 @@ submitBtnSelector = document.getElementById('jsSubmitMessage');
 messageInputSelector = document.getElementById('message');
 
 submitBtnSelector.addEventListener('click', (event) => {
+    // message sample: I can't believe Tweeter now supports chunking my messages, so I don't have to do it myself.
     let inputValue = messageInputSelector.value;
     let ouputMessage = messageSpliter(inputValue, 50);
     console.log(ouputMessage);
